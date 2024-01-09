@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+        http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" 
+    version="2.4">
+    <display-name>Application WEB affichant HelloWorld</display-name> 
+    <servlet> 
+        <servlet-name>form</servlet-name> 
+        <servlet-class>controller.Othercontroller</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>form</servlet-name> 
+        <url-pattern>/Formulaire</url-pattern> 
+    </servlet-mapping>
+
+    <servlet> 
+        <servlet-name>form1</servlet-name> 
+        <servlet-class>controller.InsertController</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>form1</servlet-name> 
+        <url-pattern>/insertion</url-pattern> 
+    </servlet-mapping> 
+
+    <servlet> 
+        <servlet-name>form2</servlet-name> 
+        <servlet-class>controller.SeletController</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>form2</servlet-name> 
+        <url-pattern>/Detail</url-pattern> 
+    </servlet-mapping> 
+    <!-- detail style -->
+    <servlet> 
+        <servlet-name>mymatiere</servlet-name> 
+        <servlet-class>controller.DonnerController</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>mymatiere</servlet-name> 
+        <url-pattern>/allmatiere</url-pattern> 
+    </servlet-mapping> 
+
+    <servlet> 
+        <servlet-name>myproduit</servlet-name> 
+        <servlet-class>controller.InsertProduit</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>myproduit</servlet-name> 
+        <url-pattern>/myinsertion_produit</url-pattern> 
+    </servlet-mapping> 
+
+    <servlet> 
+        <servlet-name>addcategorie</servlet-name> 
+        <servlet-class>controller.InsertCatController</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>addcategorie</servlet-name> 
+        <url-pattern>/adding</url-pattern> 
+    </servlet-mapping> 
+    <!-- style -->
+    <servlet> 
+        <servlet-name>addstyle</servlet-name> 
+        <servlet-class>controller.InsertStyleCon</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>addstyle</servlet-name> 
+        <url-pattern>/show_style</url-pattern> 
+    </servlet-mapping>
+    <!-- insert style -->
+    <servlet> 
+        <servlet-name>insert_style</servlet-name> 
+        <servlet-class>controller.InsertStyleController</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>insert_style</servlet-name> 
+        <url-pattern>/styling</url-pattern> 
+    </servlet-mapping>
+    <!-- show matiere premiere -->
+    <servlet> 
+        <servlet-name>matierepremiere</servlet-name> 
+        <servlet-class>controller.MatiereCon</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>matierepremiere</servlet-name> 
+        <url-pattern>/mat_p</url-pattern> 
+    </servlet-mapping>
+    <!-- insertion matiere -->
+    <servlet> 
+        <servlet-name>mt_insert</servlet-name> 
+        <servlet-class>controller.InsertMatController</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>mt_insert</servlet-name> 
+        <url-pattern>/insertion_mat</url-pattern> 
+    </servlet-mapping>
+    <!-- choix fabrication -->
+    <servlet> 
+        <servlet-name>choix_fab</servlet-name> 
+        <servlet-class>controller.ChoixFabrication</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>choix_fab</servlet-name> 
+        <url-pattern>/choixfab</url-pattern> 
+    </servlet-mapping>
+    <!-- formule -->
+    <servlet> 
+        <servlet-name>formule</servlet-name> 
+        <servlet-class>controller.GetFabricationMatiere</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>formule</servlet-name> 
+        <url-pattern>/addformule</url-pattern> 
+    </servlet-mapping>
+    <!-- insert -->
+    <servlet> 
+        <servlet-name>insertformule</servlet-name> 
+        <servlet-class>controller.InsertFabricationController</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>insertformule</servlet-name> 
+        <url-pattern>/myformule</url-pattern> 
+    </servlet-mapping>
+    <!-- rechercghe -->
+    <servlet> 
+        <servlet-name>recherche</servlet-name> 
+        <servlet-class>controller.RechercherController</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>recherche</servlet-name> 
+        <url-pattern>/inss</url-pattern> 
+    </servlet-mapping>
+    <!--  -->
+    <servlet> 
+        <servlet-name>dt</servlet-name> 
+        <servlet-class>controller.DetailsCon</servlet-class> 
+    </servlet>
+    <servlet-mapping> 
+        <servlet-name>dt</servlet-name> 
+        <url-pattern>/yahoo</url-pattern> 
+    </servlet-mapping>
+    <!--  -->
+</web-app>

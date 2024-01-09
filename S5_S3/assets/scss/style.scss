@@ -1,0 +1,107 @@
+
+:root{
+    --blue: blue;
+    --red: red;
+    --purple: rgb(127 32 0 / 91%);
+    --white: rgb(111 106 102 / 59%);
+    --back: rgb(255 255 255);
+    --input: rgba(226, 226, 226, 0.615);
+    --grayligth: rgba(226, 226, 226, 0.338);
+}
+body{
+    background: var(--white);
+ 
+    margin: 0;
+    padding: 0;
+}
+.container-page{
+    display: flex;
+    width: 100%;
+    .menu{
+        position: fixed;
+        transition: .4s;
+       
+        width: 15%;
+        background: var(--back);
+        height: 100vh;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 8px 5px rgba(130, 130, 130, 0.3);
+        .mother_span{
+            width: 80%;
+            margin : 0 auto;
+            border-radius: 5px;
+            padding: 10px;
+            transition: .8s ease-in;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: rgba(0, 0, 0, 0.673);
+            font-weight: bold;
+            transition: .8s;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            img{
+                width: 20px;
+                height: 20px;
+                padding-right: 5px;
+            }
+            .arrow-down{
+                width: 15px !important;
+                height: 15px !important;
+                margin-left: 30%;
+                transition: .8s;
+            }
+            .active{
+                transform: rotate(180deg);
+            }
+        }
+        .mother_span:hover{
+            cursor: pointer;
+            background: var(--purple);
+        }
+        .detail-dasboard{
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            transition: .4s ease-in-out;
+            span{
+              
+                font-size: 12px;
+                cursor: pointer;
+                color: rgba(0, 0, 0, 0.673);
+                font-weight: bold;
+                padding: 9px;
+                margin-bottom: 5px;
+                a{
+                    color: rgba(0, 0, 0, 0.673);
+                    text-decoration: none;
+                    transition: .4s ease-in-out;
+                }
+                a:hover{
+                    display: flex;
+                    font-weight: bold;
+                    color: var(--purple);
+                    transform: translateX(5px);
+                }
+            }
+        }
+        .notactive{
+            opacity: 0;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    }
+    .content-all-pages{
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
+        margin-left: 16%;
+    }
+}
+@import url("../scss/formulaire.css");
+@import url("../scss/Tableau.css");
+@import url("../scss/Composant.css");

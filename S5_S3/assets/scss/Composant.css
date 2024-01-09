@@ -1,0 +1,38 @@
+
+.box {
+  margin-left: 45%;
+  margin-top: 40px;
+  padding: 5px;
+  background: var(--back);
+  box-shadow: 0px 4px 8px 5px rgba(130, 130, 130, 0.3);
+  width: 40%;
+  float: left;
+}
+.box .title {
+  margin-left: 5px;
+  color: rgb(245, 139, 139);
+}
+.box .composant {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.box .composant .composant-child {
+ 
+  font-size: 30px;
+  border-radius: 25px;
+  margin-left: 5px;
+  margin-top: 8px;
+  background: var(--purple);
+  display: flex;
+  width: 25%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--back);
+}
+.table {
+  width: 100%;
+}/*# sourceMappingURL=Composant.css.map */

@@ -1,0 +1,110 @@
+ @import url("../scss/formulaire.css");
+@import url("../scss/Tableau.css");
+@import url("../scss/Composant.css");
+
+
+:root {
+  --blue: rgb(21, 21, 39);
+  --red: rgb(222, 119, 143);
+  --purple: rgba(230, 173, 229, 0.91);
+  --white: rgba(253, 234, 248, 0.59);
+  --back: rgb(248, 226, 245);
+  --input: rgba(208, 185, 217, 0.615);
+  --grayligth: rgba(226, 226, 226, 0.338);
+}
+
+body {
+  background: var(--white);
+  
+  margin: 0;
+  padding: 0;
+}
+
+.container-page {
+  display: flex;
+  width: 100%;
+}
+.container-page .menu {
+  position: fixed;
+  transition: 0.4s;
+
+  width: 15%;
+  background: var(--back);
+  height: 100vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px 5px rgba(130, 130, 130, 0.3);
+}
+.container-page .menu .mother_span {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.8s ease-in;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.673);
+  font-weight: bold;
+  transition: 0.8s;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.container-page .menu .mother_span img {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+.container-page .menu .mother_span .arrow-down {
+  width: 15px !important;
+  height: 15px !important;
+  margin-left: 30%;
+  transition: 0.8s;
+}
+.container-page .menu .mother_span .active {
+  transform: rotate(180deg);
+}
+.container-page .menu .mother_span:hover {
+  cursor: pointer;
+  background: var(--purple);
+}
+.container-page .menu .detail-dasboard {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease-in-out;
+}
+.container-page .menu .detail-dasboard span {
+ 
+  font-size: 12px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.673);
+  font-weight: bold;
+  padding: 9px;
+  margin-bottom: 5px;
+}
+.container-page .menu .detail-dasboard span a {
+  color: rgba(0, 0, 0, 0.673);
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+.container-page .menu .detail-dasboard span a:hover {
+  display: flex;
+  font-weight: bold;
+  color: var(--purple);
+  transform: translateX(5px);
+}
+.container-page .menu .notactive {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.container-page .content-all-pages {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  margin-left: 16%;
+}
